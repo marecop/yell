@@ -11,11 +11,11 @@ echo "=== 開始構建流程 ==="
 
 # 安裝依賴項
 echo "安裝依賴項..."
-npm install
+npm install --legacy-peer-deps
 
 # 確保安裝了 TypeScript 和相關類型
 echo "確保安裝 TypeScript 相關依賴..."
-npm install typescript @types/react @types/node @types/react-dom --no-save
+npm install typescript @types/react @types/node @types/react-dom --legacy-peer-deps --no-save
 
 # 確保數據目錄存在
 echo "確保數據目錄存在..."

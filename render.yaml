@@ -3,7 +3,7 @@ services:
     name: yellowair
     env: node
     buildCommand: chmod +x build.sh && ./build.sh
-    startCommand: node server.js
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
